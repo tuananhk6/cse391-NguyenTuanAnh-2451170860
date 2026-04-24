@@ -10,6 +10,11 @@ Phần A:
        8. type="time" → Chọn giờ → Dùng chọn giờ nhận hàng.
        9. type="checkbox" → Ô tích nhiều lựa chọn → Dùng đồng ý điều khoản.
        10. type="radio" → Chọn 1 trong nhiều mục → Dùng chọn thanh toán.
-   
+    Câu A2:
+       TH1: Không submit được vì required bắt buộc phải điền, không được để trống
+       TH2: Không submit đc vì type="email" bắt buộc phải có ký tự @ và tên miền
+       TH3: Không submit đc vì value="15" lớn hơn giới hạn tối đa max="10"
+       TH4: Không submit đc vì pattern="[0-9]{10}" bắt buộc nhập đúng 10 chữ số.
+       TH5: Không submit đc vì minlength="8" bắt buộc tối thiểu 8 ký tự, nhưng user mới nhập 3 ký tự.
 
 
