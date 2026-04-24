@@ -27,5 +27,25 @@ Phần A:
              Dùng khi phần tử không có text hiển thị để mô tả, ví dụ nút chỉ có icon kính lúp.
         Vì sao không nên dùng khi đã có <label>?
              Vì <label> là semantic HTML chuẩn, dễ hỗ trợ tốt hơn và hiển thị được cho cả người nhìn thấy lẫn screen reader. Nếu đã có label mà thêm aria-label, có thể gây trùng lặp hoặc xung đột tên đọc.
+    Câu A4:
+        4.1: loading="lazy" trên <img> là gì?
+            Là chế độ tải ảnh khi ảnh gần xuất hiện trong màn hình, không tải ngay từ đầu.
+        Cải thiện:
+            Tăng tốc độ tải trang
+            Giảm dung lượng mạng
+            Tăng hiệu năng trên mobile
+        Không nên dùng khi:
+            Ảnh đầu trang  (hero/banner)
+            Logo quan trọng hiển thị ngay
+            Ảnh cần xuất hiện tức thì
+        4.2:Vì sao nên có nhiều <source> trong <video>?
+            Vì mỗi trình duyệt hỗ trợ codec khác nhau. Nhiều <source> giúp video chạy trên nhiều trình duyệt và thiết bị hơn.
+        Ba format video web phổ biến:MP4, WebM, OGG
+        4.3:alt trên <img> dùng để làm gì?
+            Mô tả ảnh khi ảnh lỗi hoặc cho screen reader.
+         Ví dụ alt tốt:
+            Ảnh sản phẩm iPhone 16: alt="Điện thoại iPhone 16 màu đen nhìn từ mặt trước"
+            Ảnh trang trí: alt=""
+            Ảnh biểu đồ doanh thu Q1/2026: alt="Biểu đồ doanh thu quý 1 năm 2026 tăng dần từ tháng 1 đến tháng 3"
 
 
