@@ -81,3 +81,14 @@ Sửa: <label for="city">Thành phố:</label> <select id="city" name="city">...
 
         Lỗi 8: Dòng 16 — Label điều khoản không gắn với checkbox, không thể click chọn.
 Sửa: <input type="checkbox" id="agree" name="agree" required> <label for="agree">Tôi đồng ý điều khoản</label>
+     Câu C2: 
+        2.1: CMND/CCCD (12 chữ số): pattern="[0-9]{12}"
+             Số tài khoản (10-15 chữ số): pattern="[0-9]{10,15}"
+        2.2: HTML5 Validation không đủ an toàn cho ngân hàng vì HTML5 chạy ở Frontend (trên máy user),có thể dùng F12 xóa thuộc tính required hoặc pattern trong HTML là có thể gửi bất cứ thứ gì lên.
+        2.3:Ba loại validation HTML5 không thể làm được (cần JavaScript)
+             1. Kiểm tra PIN nhập lại có trùng PIN ban đầu hay không.
+             2. Kiểm tra CMND/CCCD đã tồn tại trong hệ thống chưa.
+             3. Kiểm tra số tài khoản có hợp lệ theo ngân hàng hoặc tồn tại thật không.
+        2.4: Hai rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend
+             1. Kẻ xấu bypass validation bằng cách gửi dữ liệu giả trực tiếp lên server.
+             2. Dữ liệu rác hoặc sai định dạng được lưu vào database, gây lỗi hệ thống hoặc gian lận.
