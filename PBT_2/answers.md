@@ -16,5 +16,16 @@ Phần A:
        TH3: Không submit đc vì value="15" lớn hơn giới hạn tối đa max="10"
        TH4: Không submit đc vì pattern="[0-9]{10}" bắt buộc nhập đúng 10 chữ số.
        TH5: Không submit đc vì minlength="8" bắt buộc tối thiểu 8 ký tự, nhưng user mới nhập 3 ký tự.
+    Câu A3:
+       3.1: Vì sao <label for="email"> quan trọng?
+            Vì <label for="email"> giúp screen reader đọc tên của ô nhập liệu. Khi người dùng di chuyển đến ô email, thiết bị sẽ đọc “Email, ô nhập”. Nếu không có label, người dùng chỉ nghe “edit text” nên không biết phải nhập gì. 
+        3.2: Khi nào dùng <fieldset> + <legend>?
+            Khi có nhiều input cùng một nhóm nội dung. fieldset để gom nhóm, legend là tiêu đề nhóm. Điều này giúp screen reader hiểu các trường liên quan với nhau.
+
+            Ví dụ: nhóm chọn phương thức thanh toán.
+        3.3: aria-label dùng khi nào?
+             Dùng khi phần tử không có text hiển thị để mô tả, ví dụ nút chỉ có icon kính lúp.
+        Vì sao không nên dùng khi đã có <label>?
+             Vì <label> là semantic HTML chuẩn, dễ hỗ trợ tốt hơn và hiển thị được cho cả người nhìn thấy lẫn screen reader. Nếu đã có label mà thêm aria-label, có thể gây trùng lặp hoặc xung đột tên đọc.
 
 
