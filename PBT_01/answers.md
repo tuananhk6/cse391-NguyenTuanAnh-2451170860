@@ -64,3 +64,17 @@ Lỗi 11: Dưới dòng 47 - Thiếu thẻ đóng html - Thêm html
         Input types nào được dùng:
           type="text"
           type="submit"
+Phần C:
+    C2:
+    Ý kiến “chỉ cần dùng <div> cho mọi thứ rồi thêm class” khá tiện, nhưng không tối ưu
+ về kỹ thuật. <div> chỉ là thẻ trung tính, không mang ý nghĩa nội dung. Trong khi đó, 
+ semantic HTML như <header>, <nav>, <main>, <article> giúp trình duyệt và công cụ tìm kiếm
+ hiểu rõ cấu trúc trang.Lý do đầu tiên là SEO. Google dựa vào cấu trúc HTML để xác định đâu 
+ là nội dung chính, đâu là menu hay phần phụ. Ví dụ, một bài viết đặt trong <article> với tiêu
+ đề <h1> sẽ dễ được nhận diện và lập chỉ mục tốt hơn so với việc tất cả đều là <div>. Điều này
+ giúp tăng khả năng xuất hiện trên kết quả tìm kiếm.Lý do thứ hai là Accessibility. Người 
+ khiếm thị dùng screen reader để truy cập web. Khi trang có <nav>, họ có thể chuyển nhanh đến
+ menu; có <main> thì vào thẳng nội dung chính. Nếu chỉ toàn <div>, thiết bị hỗ trợ khó hiểu 
+ bố cục, làm trải nghiệm kém hơn.Tuy nhiên, <div> vẫn phù hợp trong nhiều trường hợp như làm 
+ container chia layout bằng Flexbox/Grid, nhóm phần tử để tạo hiệu ứng CSS hoặc thao tác 
+ JavaScript. Vì vậy, <div> rất hữu ích, nhưng không nên thay thế hoàn toàn semantic HTML.
