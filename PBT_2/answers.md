@@ -56,3 +56,28 @@ Phần A:
                 2. Bài viết review laptop có ảnh minh họa.
 
 
+Phần C: PHÂN TÍCH & SUY LUẬN 
+    Câu C1: Debug Form
+         Lỗi 1: Dòng 2 — Input "Tên" không có <label for="...">, vi phạm accessibility.
+Sửa: <label for="name">Tên:</label> <input type="text" id="name" name="name" required>
+
+         Lỗi 2: Dòng 4 — Input email chỉ dùng placeholder, không có label.
+Sửa: <label for="email">Email:</label> <input type="email" id="email" name="email" required>
+
+         Lỗi 3: Dòng 6 — Input mật khẩu không có label.
+Sửa: <label for="password">Mật khẩu:</label> <input type="password" id="password" name="password" required minlength="8">
+
+        Lỗi 4: Dòng 7 — Input nhập lại mật khẩu không có label.
+Sửa: <label for="confirm">Nhập lại mật khẩu:</label> <input type="password" id="confirm" name="confirm" required>
+
+        Lỗi 5: Dòng 9 — Phone dùng type="text" thay vì type="tel".
+Sửa: <label for="phone">Phone:</label> <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+
+         Lỗi 6: Dòng 9 — Phone dùng value="0901234567" làm dữ liệu mặc định không hợp lý.
+Sửa: <input type="tel" id="phone" name="phone" placeholder="0901234567">
+
+         Lỗi 7: Dòng 11 — <select> không có label.
+Sửa: <label for="city">Thành phố:</label> <select id="city" name="city">...</select>
+
+        Lỗi 8: Dòng 16 — Label điều khoản không gắn với checkbox, không thể click chọn.
+Sửa: <input type="checkbox" id="agree" name="agree" required> <label for="agree">Tôi đồng ý điều khoản</label>
