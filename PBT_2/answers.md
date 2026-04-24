@@ -47,5 +47,12 @@ Phần A:
             Ảnh sản phẩm iPhone 16: alt="Điện thoại iPhone 16 màu đen nhìn từ mặt trước"
             Ảnh trang trí: alt=""
             Ảnh biểu đồ doanh thu Q1/2026: alt="Biểu đồ doanh thu quý 1 năm 2026 tăng dần từ tháng 1 đến tháng 3"
+    Câu A5:
+         Cách 1: Chỉ dùng <img> + alt: Dùng khi ảnh chỉ minh họa đơn giản, không cần chú thích hiển thị riêng.
+            VD: 1. Logo thương hiệu ở đầu trang.
+                2. Ảnh icon sản phẩm nhỏ trong danh sách giỏ hàng.
+        Cách 2: : Dùng <figure> + <figcaption>: Dùng khi ảnh cần chú thích, mô tả.
+            VD: 1. Trang chi tiết sản phẩm điện thoại.
+                2. Bài viết review laptop có ảnh minh họa.
 
 
