@@ -49,3 +49,18 @@ Lỗi 8: Dòng 22 - Sai vị trí thẻ đóng
 Lỗi 9 Dòng 40 - Thừa 1 thẻ 
 Lỗi 10: Dòng 45 - Thẻ p chưa đóng - Thêm thẻ p
 Lỗi 11: Dưới dòng 47 - Thiếu thẻ đóng html - Thêm html
+    B4: Phân tích trang WEB thật
+       4.1:
+    <header>: Phần đầu trang Chứa logo, menu, tìm kiếm
+    <nav>: Thanh menu đầu trang	điều hướng đến Điện thoại, Laptop, Tablet...
+    <footer>: Cuối trang thông tin công ty, hỗ trợ, chính sách
+       4.2: 
+       Bảng hiển thị: Hệ điều hành, chip xử lí, ram, dung lượng . Giúp người mua lựa chọn kĩ càng trước khi mua sản phẩm.
+       Có dùng <Tbody>
+       4.3:
+       form có:
+          action :    tim-kiem hoặc URL tìm kiếm nội bộ
+          method :  	GET
+        Input types nào được dùng:
+          type="text"
+          type="submit"
